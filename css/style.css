@@ -1212,13 +1212,16 @@ body {
 
     .modal-icon-tel {
         position: absolute;
-        bottom: 30px;
+        bottom: 13px;
         left: 14px;
         width: 13px;
         height: 13px;
     }
 
     .modal-icon-mail {
+        position: absolute;
+        bottom: 14px;
+        left: 14px;
         width: 15px;
         height: 12px;
     }
@@ -1239,7 +1242,7 @@ body {
     }
 
     
-    ::placeholder {
+    .form-area ::placeholder {
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -1272,6 +1275,13 @@ body {
     textarea {
         resize: none;
     }
+
+    .comments {
+        width: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px; 
+    }
     .modal-form {
         width: 100%;
         margin-left: auto;
@@ -1279,14 +1289,55 @@ body {
     }
 
     .form-name {
+        display: flex;
+        flex-direction: column;
         position: relative;
         height: 60px;
         margin-bottom: 10px;
     }
 
+    .form-area {
+        margin-bottom: 20px;
+    }
+
     .form-tel {
         position: relative;
         height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .form-mail {
+        position: relative;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .modal-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .if {
+        color: var(--accent-color);
+    }
+
+    .checkbox {
+        margin-bottom: 30px;
+    }
+
+    .modal-button {
+        background-color: var(--accent-color);
+        color: #FFFFFF;
+        width: 200px;
+        height: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;   
+        
+    }
+
+    .modal-btn {
+        display: flex;
+        justify-content: center;
     }
    
     
