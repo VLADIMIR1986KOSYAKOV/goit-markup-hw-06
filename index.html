@@ -357,31 +357,37 @@
                 </svg>
             </button>
             <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-            <form class="js-speaker-form">                
+            
+            <form class="modal-form">                
                 
-                <div class="form-label">
-                    <label for="name" class="modal-label">Имя</label><br>
-                    <input type="text" name="name" id="name">
+                <div class="form-name">
+                    <label for="name" class="modal-label">Имя</label>
+                    <input type="text" class="modal-input" name="name" id="name">
+                    <div>
                         <svg class="modal-icon-name">
                             <use href="./images/icons.svg#icon-Vector"></use>
-                        </svg>                          
+                        </svg>
+                    </div>                          
                 </div>          
 
-                <div class="form-label">
-                    <label for="tel" class="modal-label">Телефон</label><br>
-                    <input type="tel" name="tel" id="tel">
-                    <svg class="modal-icon-tel">
-                        <use href="./images/icons.svg#icon-Vector-1"></use>
-                    </svg>
+                <div class="form-tel">
+                    <label for="tel" class="modal-label">Телефон</label>
+                    <input type="tel" class="modal-input" name="tel" id="tel">
+                    <div>
+                        <svg class="modal-icon-tel">
+                            <use href="./images/icons.svg#icon-Vector-1"></use>
+                        </svg>
+                    </div>
                     <br>
                 </div>
 
-                <label for="mail" class="modal-label">Почта</label><br>
-                <input type="email" name="mail" id="mail">
-                <svg class="modal-icon-mail">
-                    <use href="./images/icons.svg#icon-Vector-2"></use>
-                </svg>
-                <br>
+                <div class="form-mail"><label for="mail" class="modal-label">Почта</label>
+                    <input type="email" class="modal-input" name="mail" id="mail">
+                    <svg class="modal-icon-mail">
+                        <use href="./images/icons.svg#icon-Vector-2"></use>
+                    </svg>
+                    <br>
+                </div>
                 
                 <label class="modal-label">Комментарии</label><br>
                 <textarea name="comments" rows="5" placeholder="Введите текст"></textarea>

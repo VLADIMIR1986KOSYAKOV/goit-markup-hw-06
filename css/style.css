@@ -1156,7 +1156,7 @@ body {
         width: 100%;
         max-width: 528px;
         min-height: 581px;
-        padding: 40px 30px;
+        padding: 40px 40px;
         background-color: #fff;
         border-radius: 30px;
         background: #FFFFFF;
@@ -1190,6 +1190,7 @@ body {
     /*Формы модального окна*/
 
     .modal-title {
+        margin-bottom: 12px;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
@@ -1202,11 +1203,17 @@ body {
     }
 
     .modal-icon-name {
+        position: absolute;
+        bottom: 14px;
+        left: 15px;
         width: 12px;
         height: 12px;
     }
 
     .modal-icon-tel {
+        position: absolute;
+        bottom: 30px;
+        left: 14px;
         width: 13px;
         height: 13px;
     }
@@ -1231,6 +1238,7 @@ body {
         color: #757575;
     }
 
+    
     ::placeholder {
         font-family: Roboto;
         font-style: normal;
@@ -1251,8 +1259,34 @@ body {
         color: #757575;
     }
 
+    .modal-input {
+        display: block;
+        margin-top: 4px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
     textarea {
         resize: none;
+    }
+    .modal-form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-name {
+        position: relative;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .form-tel {
+        position: relative;
+        height: 60px;
     }
    
     
