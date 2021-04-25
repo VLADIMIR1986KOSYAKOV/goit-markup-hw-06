@@ -1175,6 +1175,7 @@ body {
         border-radius: 50%;
         background: #FFFFFF;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
         transform: scale(1);
     transition: var(--transition-transform);
     }
@@ -1252,6 +1253,15 @@ body {
         border-color: #188ce8;
     }
 
+    .comments:hover,
+    .comments:focus {
+        border-color: var(--accent-color); 
+    }
+
+    .comments {
+        outline: none;
+    }
+
     .btn-close-icon {
         width: 11px;
         height: 11px;
@@ -1291,12 +1301,14 @@ body {
     .modal-input {
         display: block;
         margin-top: 4px;
+        padding: 12px 12px 12px 42px;
         width: 100%;
         height: 40px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         box-sizing: border-box;
         border-radius: 4px;
         cursor: pointer;
+        outline: none;
     }
 
     textarea {
@@ -1307,7 +1319,8 @@ body {
         width: 100%;
         border: 1px solid rgba(33, 33, 33, 0.2);
         box-sizing: border-box;
-        border-radius: 4px; 
+        border-radius: 4px;
+        
     }
     .modal-form {
         width: 100%;
@@ -1371,8 +1384,7 @@ body {
         margin: 0;
         padding: 0;
         width: 200px;
-        height: 50px;
-      
+        height: 50px;      
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
@@ -1387,6 +1399,7 @@ body {
 
     .checkbox-label{
         display: flex;
+        align-items: center;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -1399,38 +1412,40 @@ body {
       .checkbox-modal:checked + .icon-checkbox{
         border-color: var(--accent-color);
         background-color: var(--accent-color);
-        background-image: url(../images/icon/icon-check.svg);
+        background-image: url(../images/icons/Vector5.svg);
         background-size: contain;
         background-origin: border-box;      
       }
       .checkbox-modal{
-        position: absolute;
+        
         text-align: start;
         display: inline-block;
       }
-      .custom-checkbox {
+      /*.custom-checkbox {
         position: relative;  
         display: flex;
         align-items: center;
         padding-left: 37px;
-      }
+      }*/
 
       .form-checkbox {
           position: relative;
       }
 
-      .icon-checkbox{
-        position: absolute;
+      .icon-checkbox {
+        margin-right: 7px;
+        margin-left: 12px;
         left: 0;
         bottom: 5px;                     
         width: 16px;
         height: 15px;
-        border: 2px solid var(--text-title-color);
+        border: 2px solid #000000;
         border-radius: 2px;      
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-          background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
-      .checkbox-modal:checked + .icon-checkbox{
+      .icon-checkbox:checked + .icon-checkbox{
         border-color: var(--accent-color);
         background-color: var(--accent-color);
         background-image: url(./images/icon/.icon-check.svg);
@@ -1448,12 +1463,40 @@ body {
         text-decoration-line: underline;      
         color:var(--accent-color);
       }
-      
-
-    
+          
     .modal-btn {
         display: flex;
         justify-content: center;
+    }
+
+    .footer-mailing {
+        margin-left: 93px;
+        min-width: 300px;
+    }
+
+    .form-footer {
+        display: flex;
+    }
+
+    .signup-input {        
+        width: 358px;
+        height: 50px;
+        color: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color:#2F303A;
+    }
+
+    .signup-input::placeholder {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
     }
    
     
