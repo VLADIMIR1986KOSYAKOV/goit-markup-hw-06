@@ -1517,6 +1517,11 @@ body {
     .icon-send {
         margin-left: 10px;
     }
+  
+    .icon-checkbox:hover,
+    .icon-checkbox:focus {
+        border-color: var(--accent-color);
+    }
 
 
    
