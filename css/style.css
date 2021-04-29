@@ -687,8 +687,7 @@ body {
     .menu__item {
         position: relative;
         margin-right: 50px;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        
     }
 
     .menu__activ-studio::after {
@@ -701,6 +700,16 @@ body {
         width: 100%;
         height: 4px;
         border-radius: 2px;
+    }
+
+    .menu__activ-studio {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .menu__decor {
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
     
@@ -1166,7 +1175,7 @@ body {
         background: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        transition: transform 700ms ease-in-out 300ms;
+        transition: var(--transition-transform);
     }
 
     .btn-close {
@@ -1180,8 +1189,7 @@ body {
         background: #FFFFFF;
         border: 1px solid rgba(0, 0, 0, 0.1);
         cursor: pointer;
-        /*transform: scale(1);*/
-    transition: var(--transition-transform);
+        transition: var(--transition-transform);
     }
 
     .btn-close:hover .btn-close-icon{
@@ -1415,8 +1423,17 @@ body {
         background-size: contain;
         background-origin: border-box;      
       }
-      .checkbox-modal{
-        
+
+      .checkbox-modal:focus + .icon-checkbox{
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+        background-image: url(../images/icons/Vector5.svg);
+        background-size: contain;
+        background-origin: border-box;
+      }
+      
+      
+      .checkbox-modal{        
         text-align: start;
         display: inline-block;
       }
@@ -1449,9 +1466,17 @@ body {
         background-color: var(--accent-color);
         background-image: url(./images/icon/.icon-check.svg);
         background-size: contain;
-        background-origin: border-box;
-      
+        background-origin: border-box;      
       }
+
+      
+    .icon-checkbox:focus {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+        background-image: url(./images/icon/.icon-check.svg);
+        background-size: contain;
+        background-origin: border-box;
+    }
 
       .checkbox-link{
         margin: 0px;
@@ -1524,10 +1549,7 @@ body {
         margin-left: 10px;
     }
   
-    .icon-checkbox:hover,
-    .icon-checkbox:focus {
-        border-color: var(--accent-color);
-    }
+    
 
 
    
