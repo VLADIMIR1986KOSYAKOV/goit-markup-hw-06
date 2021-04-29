@@ -470,6 +470,7 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     
+    
 }
 
 .overlay {
@@ -567,6 +568,10 @@ body {
 
     .section-ourdeel {
         position: relative;
+    }
+
+    .section-mark {
+        padding: 94px;
     }
 
     .title-list-command {
@@ -712,11 +717,11 @@ body {
         
     }
 
-    .mark-item {
+    .list-mark__mark-item {
         width: 270px;        
     }
 
-    .mark-item::before{
+    .list-mark__mark-item::before{
         content: "";
         display: block;
         height: 120px;        
@@ -728,23 +733,23 @@ body {
         margin-bottom: 30px;
     }
 
-    .mark-item:nth-child(1)::before {        
+    .list-mark__mark-item:nth-child(1)::before {        
         background-image: url(../images/studio/mark-items/antenna\ 1.svg);
     }
 
-    .mark-item:nth-child(2)::before {
+    .list-mark__mark-item:nth-child(2)::before {
         background-image: url(../images/studio/mark-items/clock\ 1.svg);
     }
 
-    .mark-item:nth-child(3)::before {
+    .list-mark__mark-item:nth-child(3)::before {
         background-image: url(../images/studio/mark-items/diagram\ 1.svg);
     }
 
-    .mark-item:nth-child(4)::before {
+    .list-mark__mark-item:nth-child(4)::before {
         background-image: url(../images/studio/mark-items/astronaut\ 1.svg);
     }
 
-    .list-mark .mark-item +.mark-item {
+    .list-mark .list-mark__mark-item +.list-mark__mark-item {
         margin-left: 30px;
     } 
 
@@ -775,13 +780,14 @@ body {
         margin-top: -30px;        
       }
       
-      .grid-item {
+      .grid__grid-item
+       {
         flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
         margin-left: -30px;
         margin-top: 30px;
       }
 
-      .about-item {
+      .grid__about-item {
         --grid-item: 3;
       }
 
@@ -843,7 +849,7 @@ body {
                 
     }
 
-    .container-teem {
+    .teem {
         padding-top: 94px;
         padding-bottom: 94px;
         background-color: #F5F4FA;
@@ -879,18 +885,18 @@ body {
         margin-bottom: 16px;
     }
 
-    .container-footer {
+    .footer__container {
         margin-right: 70px;
         
          }
 
-    .link-footer.link {
+    .footer__link.link {
         margin-bottom: 20px;
         transition: fill var(--animation);
         transition: background-color var(--transition-whole);
     }
 
-    .adress-nav {
+    .adress {
         margin-top: 20px;
     }
     address.link-mailto {
@@ -909,7 +915,7 @@ body {
     }
 
 
-    .footer-blok {
+    .footer__blok {
         display: flex;
         align-items: baseline;
         width: 1200px;
@@ -992,7 +998,7 @@ body {
         --grid-item: 3;
     }
 
-    .grid-item {
+    .grid__grid-item {
         flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
         margin-left: 28px;
         margin-top: 30px;
@@ -1138,12 +1144,12 @@ body {
         height: 100%;
         background: rgba(0, 0, 0, 0.2);
         opacity: 1;
-        transition: opacity 500ms ease-out 200ms;
+        transition: opacity var(--transition-whole);
     }
 
     .backdrop.is-hidden {
         opacity: 0;
-        visibility: hidden;
+        /*visibility: hidden;*/
         pointer-events: none;
     }
 
@@ -1174,7 +1180,7 @@ body {
         background: #FFFFFF;
         border: 1px solid rgba(0, 0, 0, 0.1);
         cursor: pointer;
-        transform: scale(1);
+        /*transform: scale(1);*/
     transition: var(--transition-transform);
     }
 
@@ -1182,9 +1188,9 @@ body {
         fill: var(--accent-color);
     }
 
-    .is-hidden .modal {
+    /*.is-hidden .modal {
         transform: translate(0, -100%) scale(0.2);
-    }
+    }*/
 
     /*Формы модального окна*/
 
@@ -1232,28 +1238,28 @@ body {
         
     }
 
-    .modal-input:hover + .modal-icon-name,
-    .modal-input:focus + .modal-icon-name {
+    .form__input:hover + .modal-icon-name,
+    .form__input:focus + .modal-icon-name {
         fill: var(--accent-color);
         border: var(--accent-color);
     }
 
-    .modal-input:hover + .modal-icon-tel,
-    .modal-input:focus + .modal-icon-tel {
+    .form__input:hover + .modal-icon-tel,
+    .form__input:focus + .modal-icon-tel {
         fill: var(--accent-color);
     }
 
-    .modal-input:hover + .modal-icon-mail,
-    .modal-input:focus + .modal-icon-mail {
+    .form__input:hover + .modal-icon-mail,
+    .form__input:focus + .modal-icon-mail {
         fill: var(--accent-color);
     }
 
-    .modal-input:hover,
-    .modal-input:focus {
+    .form__inputt:hover,
+    .form__input:focus {
         border-color: var(--accent-color);
     }
 
-    .modal-label:focus{
+    .form__label:focus{
         border-color: #188ce8;
     }
 
@@ -1272,7 +1278,7 @@ body {
         height: 11px;
     }
 
-    .modal-label {
+    .form__label {
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -1303,7 +1309,7 @@ body {
         color: #757575;
     }
 
-    .modal-input {
+    .form__input {
         display: block;
         margin-top: 4px;
         padding: 12px 12px 12px 42px;
@@ -1327,13 +1333,13 @@ body {
         border-radius: 4px;
         
     }
-    .modal-form {
+    .form {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .form-name {
+    .form__name {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -1345,13 +1351,13 @@ body {
         margin-bottom: 20px;
     }
 
-    .form-tel {
+    .form__tel {
         position: relative;
         height: 60px;
         margin-bottom: 10px;
     }
 
-    .form-mail {
+    .form__mail {
         position: relative;
         height: 60px;
         margin-bottom: 10px;
