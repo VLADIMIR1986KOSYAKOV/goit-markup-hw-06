@@ -1003,7 +1003,7 @@ body {
         align-items: center;       
     }
 
-    .examples-item {
+    .examples__item {
         --grid-item: 3;
     }
 
