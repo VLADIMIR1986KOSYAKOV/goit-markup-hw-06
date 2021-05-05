@@ -656,8 +656,7 @@ body {
                
     }
 
-    .container {
-        display: flex;
+    .container {        
         width: 1200px;
         margin-right: auto;
         margin-left: auto;
@@ -911,20 +910,14 @@ body {
     }
 
     .footer {
-        display: flex;
-        justify-content: center;       
+        
+        padding-top: 60px;
+        padding-bottom: 60px;       
         
     }
 
 
-    .footer__blok {
-        display: flex;
-        align-items: baseline;
-        width: 1200px;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
+    
     .page-footer {
         margin-bottom: 20px;;
         font-style: normal;
@@ -969,12 +962,10 @@ body {
     .filter-list {
         display: flex; 
         justify-content: center;
+        margin-bottom: 50px;
              
     }
 
-    .container-button {
-        margin-bottom: 50px;
-    }
 
     .filter-list .filter-item + .filter-item {
         margin-left: 8px;      
