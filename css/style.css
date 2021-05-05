@@ -139,14 +139,16 @@ address {
 }
 
 .link-mailto {
-  /*margin-right: 50px;*/
   display: flex;
   margin-right: 30px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--mailto-color);
-  /*transition: color var(--animation);*/
+}
+
+.link-mailto:last-child {
+  margin-right: 0;
 }
 
 .link-mailto:hover .icon-letter,
@@ -277,8 +279,12 @@ address {
 
 .social-icons-footer {
   display: flex;
-  justify-content: center;
   transition: background-color var(--transition-whole);
+}
+
+.connection {
+  display: flex;
+  flex-direction: column;
 }
 
 .social-icons-link {
@@ -847,7 +853,12 @@ address {
 }
 
 .footer__container {
+  width: 231px;
   margin-right: 70px;
+}
+
+.footer-blok {
+  display: flex;
 }
 
 .footer__link.link {
@@ -911,6 +922,11 @@ address.link-mailto {
 .portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .filter-list {
