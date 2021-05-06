@@ -920,13 +920,8 @@ address.link-mailto {
 
 /*Портфолио*/
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 94px 15px;
+  margin: 0px 72px;
 }
 
 .filter-list {
@@ -948,10 +943,9 @@ img {
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1205px;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center;
+  width: 100%;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .examples__item {

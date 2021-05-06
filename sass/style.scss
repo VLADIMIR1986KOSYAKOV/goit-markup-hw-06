@@ -967,8 +967,8 @@ body {
 
     
     .portfolio-section {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding: 94px 15px;
+        margin: 0px 72px;
         
     }
 
@@ -994,10 +994,9 @@ body {
     .cards-list {
         display: flex;
         flex-wrap: wrap;
-        width: 1205px;
-        margin-right: auto;
-        margin-left: auto;
-        align-items: center;       
+        width: 100%;
+        margin-top: -30px;
+        margin-left: -30px;       
     }
 
     .examples__item {
